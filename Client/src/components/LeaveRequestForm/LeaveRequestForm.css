@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+.leave-request-form {
+    max-width: 1300px;
+    margin: 70px auto;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.leave-counts {
+    display: flex;
+    gap: 20px;
+}
+
+.leave-count {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.leave-count h3 {
+    margin: 0;
+    color: #333;
+}
+
+.leave-count p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.remaining {
+    color: #e74c3c;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group select,
+.form-group input[type="date"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #ddd;
+}
+
+.date-and-checkbox {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+.date-and-checkbox input[type="date"] {
+    width: 50%;
+}
+
+.off-day-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Space between checkbox and label */
+    font-size: 14px;
+    color: #555;
+    flex-direction: row-reverse;
+    /* Reverse the order to place the label on the right */
+}
+
+.off-day-label input[type="checkbox"] {
+    width: 20px;
+    /* Checkbox width */
+    height: 20px;
+    /* Checkbox height */
+    background-color: white;
+    /* White background */
+    border: 2px solid black;
+    /* Black border */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    appearance: none;
+    /* Remove default styling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.off-day-label input[type="checkbox"]:checked::before {
+    content: '✔';
+    /* Checkmark */
+    font-size: 16px;
+    color: black;
+    display: block;
+
+    /* Show checkmark when checked */
+}
+
+
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    width: auto;
+    min-width: 120px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 900px) {
+    .leave-request-form {
+        padding: 30px;
+    }
+
+    .form-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .leave-counts {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .leave-request-form {
+        padding: 20px;
+    }
+
+    .submit-button {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

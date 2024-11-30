@@ -1,0 +1,32 @@
+.rules{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 60px;
+}
+.maindiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rulesbox{
+    height: auto;
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.li{
+    margin-top: 30px;
+}
+.li3{
+    margin-top: 30px;
+}
+.li1{
+    margin-top: 15px;
+}

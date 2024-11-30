@@ -1,0 +1,200 @@
+/* Importing Google Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+#root {
+    width: 100%;
+    padding: 0.6rem;
+}
+
+.login-container {
+    margin: 0 auto;
+    max-width: 410px;
+    /* Maximum width for larger screens */
+    width: 90%;
+    /* Responsive width for smaller screens */
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container .form-title {
+    text-align: center;
+    font-size: 1.37rem;
+    font-weight: 600;
+    margin-bottom: 1.87rem;
+    color: #000;
+}
+
+.login-form .input-wrapper {
+    height: 54px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.login-form .input-field {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 1.06rem;
+    color: #000;
+    background-color: #fff;
+    border-radius: 0.31rem;
+    border: 1px solid #c87b7e;
+    padding: 0px 1.25rem 0 3.12rem;
+    transition: 0.2s ease;
+}
+
+.login-form .input-field:focus {
+    border-color: #ff232c;
+}
+
+.login-form .input-field::placeholder {
+    color: #c87b7e;
+}
+
+.login-form .input-wrapper i {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    display: flex;
+    color: #c87b7e;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+.login-form .input-wrapper i:not(.eye-icon) {
+    left: 0.93rem;
+    /* Adjusted left spacing */
+}
+
+.login-form .input-field:focus~i:not(.eye-icon) {
+    color: #ff232c;
+    /* Change icon color on focus */
+}
+
+.login-form .input-wrapper i.eye-icon {
+    display: none;
+    /* Initially hidden */
+    right: 0.93rem;
+    /* Adjusted right spacing */
+}
+
+.login-form .input-wrapper .input-field:valid~.eye-icon {
+    display: flex;
+    /* Show eye icon when input is valid */
+}
+
+.login-form .forgot-pass-link {
+    display: block;
+    /* Ensure it's block level for better touch targets */
+    width: fit-content;
+    margin-top: -0.44rem;
+}
+
+.login-form .login-button {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 54px;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 2.19rem;
+    border-radius: 0.31rem;
+    background: #ff232c;
+    transition: 0.3s ease;
+}
+
+.login-form .login-button:hover {
+    background-color: #d81b24;
+    /* Darker shade on hover */
+}
+
+.login-status {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.login-status.success {
+    color: #4CAF50;
+    background-color: #E8F5E9;
+}
+
+.login-status.error {
+    color: #F44336;
+    background-color: #FFEBEE;
+}
+
+/* Change autofill background color to white */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+    box-shadow: 0 0 0px 1000px #fff inset !important;
+    -webkit-text-fill-color: #000 !important;
+    /* Optional: Change text color if needed */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .login-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .login-container .form-title {
+        font-size: 1.2rem;
+    }
+
+    .login-form .input-field,
+    .login-form .login-button {
+        font-size: 1rem;
+        /* Reduce font size for smaller screens */
+    }
+
+    .login-status {
+        font-size: 0.9rem;
+        /* Smaller font for status messages */
+    }
+}
+
+/*Select field*/
+.select-field{
+    padding: 5px 50px !important;
+}
+/*Forgot password*/
+.forgot-password{
+    font-weight: 500;
+    color:#fa4f55;
+    padding-left: 7px;
+    transition: 0.3s linear;
+}
+.forgot-password:hover{
+    cursor: pointer;
+    color:#ff232c;
+}
+.cursor{
+    cursor: pointer !important;
+}

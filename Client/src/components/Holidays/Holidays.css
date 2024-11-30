@@ -1,0 +1,37 @@
+.holidays-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 110px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.holidays-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.holidays-list {
+    list-style: none;
+    padding: 0;
+    color: #555;
+}
+
+.holidays-list li {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.holidays-list li:last-child {
+    border-bottom: none;
+}
+
+.holidays-list li strong {
+    color: #333;
+}
